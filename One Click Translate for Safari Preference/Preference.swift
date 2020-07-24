@@ -43,15 +43,23 @@ class Preference: NSObject {
             return String(format: translationEngines[engine]!.url, translationLanguages[language]!)
         }
     }
+    
+    static var translationText: String {
+        get {
+            return String(format: translationEngines[engine]!.text, translationLanguages[language]!)
+        }
+    }
 
     struct translationEngineStruct {
         var url: String
+        var text: String
         var languages: [String: String]
     }
 
     static let translationEngines = [
         "Google": translationEngineStruct(
             url: "https://translate.google.com/translate?hl=%1$@&sl=auto&tl=%1$@&u=",
+            text: "https://translate.google.com/?hl=%1$@&sl=auto&tl=%1$@&text=",
             languages: [
                 "Afrikaans": "af",
                 "Albanian": "sq",
@@ -166,6 +174,7 @@ class Preference: NSObject {
         ),
         "Bing": translationEngineStruct(
             url: "https://www.translatetheweb.com/?from=&to=%1$@&a=",
+            text: "https://www.bing.com/translator?from=&to=%1$@&text=",
             languages: [
                 "Afrikaans": "af",
                 "Arabic": "ar",
@@ -244,6 +253,7 @@ class Preference: NSObject {
         ),
         "Yandex": translationEngineStruct(
             url: "https://translate.yandex.com/translate?ui=%1$@&lang=%1$@&url=",
+            text: "https://translate.yandex.com/?ui=%1$@&lang=en-%1$@&text=", // TODO: autodetect language
             languages: [
                 "Afrikaans": "af",
                 "Albanian": "sq",

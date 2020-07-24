@@ -18,6 +18,7 @@
 		CE4BA1B724C40AC5002A5C4B /* icon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CE4BA1B624C40AC5002A5C4B /* icon.pdf */; };
 		CE4BA1C424C40EF4002A5C4B /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BA1C324C40EF4002A5C4B /* Preference.swift */; };
 		CE4BA1C524C40EF4002A5C4B /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BA1C324C40EF4002A5C4B /* Preference.swift */; };
+		CE98D86D24CA7E5300C6FB5A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = CE98D86C24CA7E5300C6FB5A /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CE4BA1B624C40AC5002A5C4B /* icon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon.pdf; sourceTree = "<group>"; };
 		CE4BA1B824C40AC5002A5C4B /* One_Click_Translate_for_Safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = One_Click_Translate_for_Safari_Extension.entitlements; sourceTree = "<group>"; };
 		CE4BA1C324C40EF4002A5C4B /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		CE98D86C24CA7E5300C6FB5A /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		CE4BA1AB24C40AC5002A5C4B /* One Click Translate for Safari Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE98D86C24CA7E5300C6FB5A /* script.js */,
 				CE4BA1AC24C40AC5002A5C4B /* SafariExtensionHandler.swift */,
 				CE4BA1B324C40AC5002A5C4B /* Info.plist */,
 				CE4BA1B624C40AC5002A5C4B /* icon.pdf */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4BA1B724C40AC5002A5C4B /* icon.pdf in Resources */,
+				CE98D86D24CA7E5300C6FB5A /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +402,7 @@
 				CODE_SIGN_ENTITLEMENTS = "One Click Translate for Safari Extension/One_Click_Translate_for_Safari_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7435577TDB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "One Click Translate for Safari Extension/Info.plist";
@@ -406,6 +411,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drodin.Free-Translate-for-Safari.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -419,6 +425,7 @@
 				CODE_SIGN_ENTITLEMENTS = "One Click Translate for Safari Extension/One_Click_Translate_for_Safari_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7435577TDB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "One Click Translate for Safari Extension/Info.plist";
@@ -427,6 +434,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drodin.Free-Translate-for-Safari.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -442,6 +450,7 @@
 				CODE_SIGN_ENTITLEMENTS = "One Click Translate for Safari/One_Click_Translate_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7435577TDB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "One Click Translate for Safari/Info.plist";
@@ -449,6 +458,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drodin.Free-Translate-for-Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -463,6 +473,7 @@
 				CODE_SIGN_ENTITLEMENTS = "One Click Translate for Safari/One_Click_Translate_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7435577TDB;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "One Click Translate for Safari/Info.plist";
@@ -470,6 +481,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.drodin.Free-Translate-for-Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
